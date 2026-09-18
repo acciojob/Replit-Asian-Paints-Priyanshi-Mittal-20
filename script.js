@@ -11,8 +11,9 @@ colorBtn.addEventListener("click",()=>{
 	change.style.backgroundColor=`${colour}`
 })
 resetBtn.addEventListener("click",()=>{
-	let colour=inputColor.value
-	let block= inputBlock.value
-	let change=document.getElementById(`${block}`)
-	container.style.backgroundColor="transparent"
+	let blocks= document.querySelectorAll(".grid-item")
+	for(let i of blocks)
+		{
+			i.style.backgroundColor="transparent"
+		}
 })
