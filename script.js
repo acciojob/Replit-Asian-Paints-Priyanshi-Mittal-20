@@ -14,5 +14,5 @@ resetBtn.addEventListener("click",()=>{
 	let colour=inputColor.value
 	let block= inputBlock.value
 	let change=document.getElementById(`${block}`)
-	change.style.backgroundColor="white";
+	container.style.backgroundColor="transparent"
 })
